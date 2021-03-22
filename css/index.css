@@ -1,0 +1,17 @@
+
+/*-----------------------headr-------------------*/
+
+.headr {position:absolute ; display: block;  text-decoration-color: transparent; padding: 0 127px; height: 85px;}
+
+.headr H2 a {height: 34px; width: 112px ;color: transparent ;background-image: url("images\logo.png") no-repeat; }
+
+.headr .index { font-size: 18px; }
+.headr .index li {position: relative; display: inline-block; height: 18px; width: 100px ;padding: 0 34;}
+
+.headr .index2 li {display: inline-block; padding: 0 10px ;}
+
+
+
+
+/*----------------------content----------------------- */
+
