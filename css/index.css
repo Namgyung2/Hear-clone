@@ -1,17 +1,38 @@
 
-/*-----------------------headr-------------------*/
+/*----------------------------------- < headr > ----------------------------*/
 
-.headr {position:absolute ; display: block;  text-decoration-color: transparent; padding: 0 127px; height: 85px;}
+.inner {position: relative ; display: block;  height: 85px; width: 1180px; margin: 0 auto;}
 
-.headr H2 a {height: 34px; width: 112px ;color: transparent ;background-image: url("images\logo.png") no-repeat; }
+/*로고 이미지*/
+.inner img { position: absolute ;display: inline-block; height: 34px; width: 112px ;  left: 0; top: 50%; transform: translateY(-50%);}
 
-.headr .index { font-size: 18px; }
-.headr .index li {position: relative; display: inline-block; height: 18px; width: 100px ;padding: 0 34;}
+/*메인매뉴*/
+.inner .index { position: absolute; left: 50%; transform: translatex(-50%);}
+.inner .index ul li{}
+.inner .index li {text-align: center; width: 120px ;padding: 33px 0 ;font-size: 18px; float:left;}
 
-.headr .index2 li {display: inline-block; padding: 0 10px ;}
+/*로그인 마이페이지 알림함*/
+.inner .index2 {position: absolute; right: 0; height: 16px; top: 50%; transform: translateY(-50%);}
+.inner .index2 li{display: inline-block; padding: 0 10px; font-size: 15px;}
 
 
+/*-------------------------------- < visual > ------------------------------ */
+
+.visual {position: relative; display: block; height: 500px;}
+.visual .button-prev {position: absolute; display: inline-block; height: 50px; width: 50px; right: 0; background-image: url("../images/mainV_prev.png");}
 
 
-/*----------------------content----------------------- */
+/*----------------------- < mainCon1 > --------------------------------*/
+.mainCon1 {position: relative; display: block; height: 778px; background-color: pink;}
 
+
+/*--------------------------- < mainCon2 > ----------------------------*/
+.mainCon2 {position: relative; display: block; height: 780px; background-color: paleturquoise;}
+
+/*--------------------------- < mainCon3 > ----------------------------*/
+
+.mainCon3 {position: relative; display: block; height: 72px; background-color: #4c4c4c;}
+
+/*---------------------------- < footer > ---------------------------*/
+
+footer {position: relative; display: block; height:48px; padding: 60px 0 ; background-color: #222222;}
