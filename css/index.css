@@ -1,104 +1,84 @@
+/* COMMON */
+body{
+    color: #333;
+    font-size:  16px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
 
-/*----------------------------------- < headr > ----------------------------*/
-header {
-    position: relative;
+  img{
     display: block;
-    height: 85px;
+  }
+  
+  a {
+    text-decoration: none; 
+  }
+
+  .inner {
     width: 1180px;
-}
-
-header .inner {
+    margin: 0 auto;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 3px solid red;
+  }
+
+
+.hide {
+    width: 0;
+    height: 0;
+    font-size 0;
+    line-height: 0;
+    position: absolute;
+    overflow: hidden;
 }
 
-/*-------------------- 로고 이미지*/
+/* HEADER */
+header {
+    height: 82px
+}
+header .inner{
+    display: flex;
+}
 header .inner img {
-    height: 34px;
-    width: 112px;
+    max-width: 100%;
     left: 0;
+
 }
+header .inner ul.index {
+    display: flex;
+    margin: 0 auto;
 
-/*---------------------- 메인매뉴*/
-header .inner .index {
-    position: relative;
-    left: 50%;
-    transform: translatex(-50%);
 }
-
-header .inner .index ul li {}
-
-header .inner .index li {
-    text-align: center;
+header .inner ul.index li{
+    height: 18px;
     width: 120px;
     padding: 33px 0;
+    text-align: center;
     font-size: 18px;
-    float: left;
 }
 
-*/
-
-/*--------------- 로그인 마이페이지 알림함*/
-.inner .index2 {
-    position: absolute;
+header .inner ul.index2 {
     right: 0;
-    height: 16px;
+    top: 32px;
+    position: absolute;
+    display: flex;
 }
-
-.inner .index2 li {
-    display: inline-block;
+header .inner ul.index2 li{
     padding: 0 10px;
-    font-size: 15px;
-}
-
-*/
-/*-------------------------------- < visual > ------------------------------ */
-
-.visual {
+    font-size: 16px;
     position: relative;
+}
+header .inner ul.index2 li::before{
+    content: "";
     display: block;
-    height: 500px;
-}
-
-.visual .button-prev {
     position: absolute;
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-    right: 0;
-    background-image: url("../images/mainV_prev.png");
+    width: 1px;
+    height: 12px;
+    top: 0;
+    bottom: 0;
+    background-color: #ddd;
+    margin: auto;
+    left: 0;
 }
-
-/*----------------------- < mainCon1 > --------------------------------*/
-.mainCon1 {
-    position: relative;
-    height: 778px;
-    background-color: pink;
-}
-
-
-/*--------------------------- < mainCon2 > ----------------------------*/
-.mainCon2 {
-    position: relative;
-    height: 780px;
-    background-color: paleturquoise;
-}
-
-/*--------------------------- < mainCon3 > ----------------------------*/
-
-.mainCon3 {
-    position: relative;
-    height: 72px;
-    background-color: #4c4c4c;
-}
-
-/*---------------------------- < footer > ---------------------------*/
-
-footer {
-    position: relative;
-    height: 48px;
-    padding: 60px 0;
-    background-color: #222222;
+header .inner ul.index2 li:first-child:before{
+    display: none;
 }
