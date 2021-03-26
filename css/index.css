@@ -39,20 +39,55 @@ header .inner{
     display: flex;
 }
 header .inner img {
-    max-width: 100%;
-    left: 0;
-
+    height: 34px;
+    width: 112px;
+    position: absolute;
+    top: 21px;
 }
+
+
 header .inner ul.index {
     display: flex;
-    margin: 0 auto;
-
+    margin: auto;
 }
 header .inner ul.index li{
     height: 18px;
     width: 120px;
     padding: 33px 0;
     text-align: center;
+    font-size: 18px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 900;
+}
+header .inner ul.index li a{
+    color: black;
+}
+header .inner ul.index li a:hover{
+    font-size: 0;
+}
+header .inner ul.index li:nth-child(1) a:hover::before{
+    content: "소개";
+    color: black;
+    font-size: 18px;
+}
+header .inner ul.index li:nth-child(2) a:hover:before{
+    content: "연구실";
+    color: black;
+    font-size: 18px;
+}
+header .inner ul.index li:nth-child(3) a:hover:before{
+    content: "자료실";
+    color: black;
+    font-size: 18px;
+}
+header .inner ul.index li:nth-child(4) a:hover:before{
+    content: "이벤트";
+    color: black;
+    font-size: 18px;
+}
+header .inner ul.index li:nth-child(5) a:hover:before{
+    content: "공지사항";
+    color: black;
     font-size: 18px;
 }
 
@@ -66,6 +101,10 @@ header .inner ul.index2 li{
     padding: 0 10px;
     font-size: 16px;
     position: relative;
+    font-family: 'roboto', sans-serif;
+}
+header .inner ul.index2 li:last-child{
+    padding-right: 0;
 }
 header .inner ul.index2 li::before{
     content: "";
@@ -82,3 +121,9 @@ header .inner ul.index2 li::before{
 header .inner ul.index2 li:first-child:before{
     display: none;
 }
+header .inner ul.index2 li a{
+    color: black;
+}
+
+/* Visual */
+
