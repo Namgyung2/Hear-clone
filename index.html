@@ -22,16 +22,23 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
-
+        <!-- 슬라이더 -->
+        <link rel="stylesheet" href="./css/swiper.css">
         <link rel="stylesheet" href="./css/index.css">
+        <script src="./js/"></script> 
+        
 
+        
     </head>
     <body>
+
+
+
         <header>
             <div class="inner">
                 <h1 class="hide">H-ear</h1>
                 <h2 class="hide">메인 목록</h2>
-                <img src="../images/logo.png" alt="로고 이미지">
+                <img src="./images/logo.png" alt="로고 이미지">
 
                 <ul class="index">
                     <li><a href="javascript:void(0)">Intro</a></li>
@@ -48,12 +55,34 @@
             </div>
         </header>
 
+
+
+
         <section class="visual">
             <h2 class="hide">메인 이미지</h2>
-            <div class="button-prev"></div>
-            <div class="button-prev"></div>
 
-            <div><a href="javascript:void(0)">메인이미지</a></div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <a href="javascript:void(0)" class="swiper-slide">
+                        <img src="./images/main1.jpg" alt=" [H-hear 크리에이터] 투싼 하이브리드와 캠핑 가게 된 사연 "> Slide 1</a>
+                    <a href="javascript:void(0)" class="swiper-slide">
+                        <img src="./images/main2.png" alt=" 봄이니까 디지털키로 시승해'봄' "> Slide 2</a>
+                    <a href="javascript:void(0)" class="swiper-slide">
+                        <img src="./images/main3.jpg" alt=" 현대차 첫 전용 전기차! 'IONIQ5'월드프리미어 "> Slide 3</a>
+                    <a href="javascript:void(0)" class="swiper-slide">
+                        <img src="./images/main4.jpg" alt=" H-ear 패널과 함계하는 전문가 칼럼! "> Slide 4</a>
+
+                </div> <!-- If we need pagination -->
+                <div class="swiper-pagination"></div> 
+
+                <!-- I<a href="javascript:void(0)"></a>f we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> 
+
+                <div class="swiper-scrollbar"></div> </div>
+            </div>
+
+
 
             <div class="log.inner">  <!----로그인창---->
             </div>
