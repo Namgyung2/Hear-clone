@@ -1,19 +1,40 @@
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+// Swiper
 
-var swiper = new Swiper('.swiper-container', {
-  
-  direction: 'vertical',
+new Swiper('.visual .swiper-container', {
+  // Optional parameters
   loop: true,
-
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+  autoplay: {
+    deplay: 3000
   },
   
-    scrollbar: {
-      el: '.swiper-scrollbar',
-  }
+  // If we need pagination
+  pagination: {
+    el: '.visual .swiper-pagination',
+    clickable: true
+  },
+
+  // Navigation arrows
+  navigation: {
+    prevEl: '.swiper-prev',
+    nextEl: '.swiper-next'
+  },
+});
+
+
+// new Swiper('.main #tab1 .swiper-container', {
+
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
+// });
+
+new Swiper('.main #tab1 .swiper-container', {
+  slidesPerView: 'auto',
+  slidesPerView: 3,
+  freeMode: true,
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+  mousewheel: true,
 });
