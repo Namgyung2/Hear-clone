@@ -32,9 +32,22 @@ new Swiper('.visual .swiper-container', {
 new Swiper('.main #tab1 .swiper-container', {
   slidesPerView: 'auto',
   slidesPerView: 3,
+  spaceBetween : 50,
   freeMode: true,
   scrollbar: {
     el: '.swiper-scrollbar',
   },
   mousewheel: true,
 });
+
+
+
+///햄버거
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}

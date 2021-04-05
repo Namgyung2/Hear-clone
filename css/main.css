@@ -13,6 +13,11 @@ a {
 .hide {
   font-size: 0;
 }
+.tit{
+  font-size: 24px;
+  color: #000;
+  font-weight: bolder;
+}
 
 
 /* header */
@@ -251,17 +256,16 @@ header .inner .sub-manu li:last-child::after{
   display:  inline-block; 
   text-align:center; 
   line-height:40px;
+  margin-right: 35px
 }
-.tabmenu ul li:nth-child(2),
-.tabmenu ul li:nth-child(3){
-  padding-left: 35px;
-}
+
 .tabmenu label{
   display:block;
   width:100%; 
   height: 40px;
   line-height:40px;
   font-size: 21px;
+  ;
 }
 .tabmenu input{display:none;}
 .tabCon{
@@ -274,14 +278,16 @@ header .inner .sub-manu li:last-child::after{
   width: 1180px;
   height: 770px;
 }
-.tabCon-1 {
+.tabCon-1 .swiper-wrapper{
+  height: 700px;
+  padding-bottom: 58px;
 }
 
 /* --------------- */
 .tabCon-1 .swiper-slide {
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, .2);
-  margin: 20px;
-  width: 274px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, .15);
+  width: 346px !important;
+  height: 700px;
 }
 .tabCon-1 .swiper-slide img {
   width: 100%;
@@ -289,50 +295,51 @@ header .inner .sub-manu li:last-child::after{
 .tabCon-1 .txtarea {
   box-sizing: border-box;
   padding: 30px 36px 40px 36px;
-  height: 344px;
+  height: 353px;
   width: 100%;
 }
 .tabCon-1 .txtarea a {
 
 }
 .tabCon-1 .txtarea a .label {
-  height: 32px;
+  height: 40px;
+  
 }
 .tabCon-1 .txtarea a .label p {
   display: inline;
-  border: 1px solid #ddd;
-  color: #000;
-  height: 15px;
-  /* padding: 5px 10px; */
+  border: 1px solid rgb(197, 192, 192);
+  padding: 3px 10px;
+  color: rgb(117, 117, 117);
 }
 .tabCon-1 .txtarea a .tit {
-  font-size: 25px;
-  color: #000;
-  font-weight: bolder;
   margin-top: 12px;
   height: 60px;
 }
 .tabCon-1 .txtarea a .txt {
   margin-top: 12px;
+  color: #777;
+  line-height: 120%;
   /* height: 67px; */
 }
 /* ===LiST=== */
 
-.tabCon-1 .txtarea .list {
+.tabCon-1 .txtarea .list{
   margin-top: 22px;
-  display: block;
-}
-.tabCon-1 .txtarea .list li {
-  display: flex;
-}
-.tabCon-1 .txtarea .list li p {
-  font-size: 15px;
-}
-.tabCon-1 .txtarea .list li .list-right {
-  position: absolute;
-  right: 0;
 }
 
+.tabCon-1 .txtarea .list li {
+  display: flex;
+  height: 26px;
+
+}
+
+.tabCon-1 .txtarea .list li .list-right {
+  position: absolute;
+  right: 36px;
+}
+.tabCon-1 .txtarea .list li .list-right .num{
+  font-weight: bolder;
+}
 .main .tabmenu .swiper-scrollbar {
   bottom: 0;
 }
@@ -342,9 +349,174 @@ header .inner .sub-manu li:last-child::after{
 
 .tabmenu input:checked ~ label{
   box-sizing: border-box;
-  border-bottom: 3px solid darkcyan;
+  border-bottom: 5px solid rgb(18, 180, 180);
 }
 .tabmenu input:checked ~ .tabCon{
   display:block;
 }
 
+
+/* MAINCON */
+
+.maincon2 {
+  padding: 79px 0 99px;
+  background-color: #f6f3f2;
+  
+}
+.maincon2 .inner .maincon2-inner{
+  display: flex;
+  justify-content: space-between;
+}
+.maincon2 .inner .hot-subject,
+.maincon2 .inner .hot-survey,
+.maincon2 .inner .hot-contents {
+  display: inline-block;
+  height: 378px;
+  width: 346px;
+}
+.maincon2 .inner .hot-survey,
+.maincon2 .inner .hot-contents {
+  margin-left: 70px;
+}
+.maincon2 .inner .hot-subject .tit,
+.maincon2 .inner .hot-survey .tit,
+.maincon2 .inner .hot-contents .tit {
+  margin-bottom: 30px;
+}
+
+.maincon2 .inner .hot-subject ul li {
+  padding: 21px 20px 20px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.maincon2 .inner .hot-subject ul li:first-child {
+ border-top: 1px solid #ddd;
+}
+.maincon2 .inner .hot-subject ul li:hover {
+  text-decoration: underline;
+}
+.maincon2 .inner .hot-subject ul li p:first-child{
+  letter-spacing: -1px;
+  color: #333;
+}
+.maincon2 .inner .hot-subject ul li p:last-child{
+  margin-top: 7px;
+  color: #999;
+}
+
+.maincon2 .inner .hot-survey ul li a{
+  height: 72px;
+  text-align: center;
+  display: flex;
+  margin: 10px 0;
+}
+.maincon2 .inner .hot-survey ul li a .day{
+  box-sizing: border-box;
+  height: 72px;
+  width: 72px;
+  background-color: white;
+  color: #333;
+  padding: 13px 0;
+}
+.maincon2 .inner .hot-survey ul li a .day span{
+  height: 25px;
+  display: block;
+  font-size: 22px;
+  font-weight: bolder;
+  
+  color: #000;
+}
+.maincon2 .inner .hot-survey ul li a p{
+  color: #333;
+  margin: auto 25px auto 28px;
+  letter-spacing: -2px;
+}
+.maincon2 .inner .hot-survey ul li a:hover p {
+  text-decoration: underline;
+
+}
+
+/* MAINCON3 */
+
+.maincon3 {
+  background-color: #555;
+  height: 72px;
+}
+.maincon3 .inner {
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.maincon3 .inner .notice,
+.maincon3 .inner .faq {
+  position: relative;
+  display: flex;
+  color: white;
+}
+.maincon3 .inner .notice {
+  width: 50%;
+}
+.maincon3 .inner .notice span,
+.maincon3 .inner .faq span {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-right: 30px;
+}
+
+.maincon3 .inner .notice p,
+.maincon3 .inner .faq p {
+  font-size: 18px;
+}
+.maincon3 .inner .notice img,
+.maincon3 .inner .faq img {
+  position: absolute;
+  height: 20px;
+  padding: 0 20px;
+  right: 0;
+
+}
+.maincon3 .inner .faq {
+  margin-left: 20px;
+}
+.maincon3 .inner .notice::after {
+  content: " ";
+  background: #777;
+  width: 1px;
+  height: 25px;
+}
+
+
+
+/* footer */
+
+footer {
+  background-color: #222;
+  padding: 60px 0 67px 0;
+}
+footer .inner {
+  display: flex;
+}
+footer img {
+  width: 78px;
+  margin: 0 40px ;
+}
+footer ul {
+  display: flex;
+}
+footer ul li{
+
+}
+footer ul li:first-child{
+  color: #ddd;
+  font-weight: bolder;
+  padding-right: 15px;
+}
+footer .inner .right ul li:nth-child(2),
+footer .inner .right ul li:nth-child(3){
+  color: #777;
+  padding: 0 15px;
+}
+
+footer .A {
+  color: #777;
+  margin-top: 20px;
+}
